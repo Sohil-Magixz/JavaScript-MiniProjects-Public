@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat and Bulb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="safety-container-1 h-screen w-screen mx-auto bg-black">
+        <div class="safety-container-2 h-full w-[90%] mx-auto flex flex-col justify-center items-center">
+            <div id="on" class="flex flex-col justify-center items-center">
+                <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573" class="h-[200px]">
+                <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774" class="h-[400px]">
+            </div>
+            <div id="off" class="hidden flex-col justify-center items-center  bg-black">
+                <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-off-img.png?updatedAt=1702818139573" class="h-[200px]">
+                <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-eyes-img.png?updatedAt=1702818167774" class="h-[400px]">
+            </div>
+            <div class="button-box bg-gray-600">
+                <button id="offbtn" class="text-white border-[1px] border-gray-500 px-5">Off</button>
+                <button id="onbtn" class="text-white border-[1px] px-5 border-gray-500 bg-red-500">On</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
