@@ -13,6 +13,7 @@ async function fetchData(){
     try{
         let data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
         let real_data = await data.json();
+        console.log(real_data);
     }
     catch(error){
         console.log("Error Caught: ",error);
