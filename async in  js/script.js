@@ -1,7 +1,7 @@
-console.log(1);
+/*console.log(1);
 console.log(2);
 
-/*let res = fetch("https://jsonplaceholder.typicode.com/todos/1").then((res)=>{
+let res = fetch("https://baconipsum.com/api/?type=all").then((res)=>{
     return res.json();
 }).then((a)=>{
     console.log(a)
@@ -11,7 +11,7 @@ console.log(2);
 
 async function fetchData(){
     try{
-        let data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+        let data = await fetch("https://baconipsum.com/api/?type=all");
         let real_data = await data.json();
         console.log(real_data);
     }

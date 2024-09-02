@@ -11,6 +11,9 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault();
     p1.textContent="";
     p2.textContent="";
+    if(password.value===""){
+        console.log("HELLO");
+    }
     if(passwordPattern.test(password.value)){
         if(password.value===con_password.value){
             form.reset();
