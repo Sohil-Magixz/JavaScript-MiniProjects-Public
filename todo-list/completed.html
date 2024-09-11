@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Tasks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="completed.js" defer></script>
+</head>
+<body class="bg-[url('./assets/8046315-CONQUER-Wallpaper.jpg')] bg-cover bg-repeat-y bg-center">
+    <div class="safety-container h-screen w-screen mx-auto">
+        <!-- Mobile Navbar -->
+        <nav class="bg-gray-700 flex flex-row justify-around items-center lg:hidden">
+            <h1 class="text-center text-white text-[28px]">Completed Tasks</h1>
+            <button id="nav_bar">
+                <img src="./assets/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" class="h-[30px]">
+            </button>
+        </nav>
+
+        <div class="safety-container-2 h-full w-[100%] lg:w-[98%] mx-auto flex flex-col lg:flex-row justify-center px-3">
+            <!-- Sidebar Navigation Menu -->
+            <div id="nav_menu" class="ml-0 lg:w-[30%] bg-[rgba(0,0,0,0.6)] lg:h-full lg:rounded-[20px] text-left my-3 hidden lg:block">
+                <ul class="lg:flex flex-col justify-center m-5">
+                    <h1 class="text-[36px] text-white mb-6">Todo List Menu</h1>
+                    <li class="my-2"><a href="./index.html" class="text-white px-2 py-1 rounded-[20px] border-[1px] hover:text-[24px] hover:text-purple-400 hover:border-purple-400 transition-all duration-500">All my tasks</a></li>
+                    <li class="my-2"><a href="#" class="text-white px-2 py-1 rounded-[20px] border-[1px] hover:text-[24px] hover:text-purple-400 hover:border-purple-400 transition-all duration-500">Today</a></li>
+                    <li class="my-2"><a href="#" class="text-white px-2 py-1 rounded-[20px] border-[1px] hover:text-[24px] hover:text-purple-400 hover:border-purple-400 transition-all duration-500">This week</a></li>
+                    <li class="my-2"><a href="#" class="text-white px-2 py-1 rounded-[20px] border-[1px] hover:text-[24px] hover:text-purple-400 hover:border-purple-400 transition-all duration-500">Important</a></li>
+                    <li class="my-2"><a href="#" class="text-white px-2 py-1 rounded-[20px] border-[1px] hover:text-[24px] hover:text-purple-400 hover:border-purple-400 transition-all duration-500">Completed</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content Area -->
+            <div id="box" class="box w-full p-3 bg-[rgba(0,0,0,0.6)] h-full my-3 lg:mx-2 rounded-[20px] flex flex-col justify-center items-center relative">
+                <h1 id="add-task-header" class="text-white text-[36px] hidden">No Completed Tasks!</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
